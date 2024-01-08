@@ -1,4 +1,4 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { auth } from "../firebase";
@@ -43,9 +43,9 @@ const Login = () => {
           })
           .catch((error) => {
             setSubmitted(false);
-            console.log("Error-", error);
+            alert("Error-" + error.message);
           });
-      }
+        }
     };
   return (
     <div className="row justify-content-center pt-5">

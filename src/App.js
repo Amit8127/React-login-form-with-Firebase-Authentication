@@ -19,7 +19,7 @@ function App() {
     })
   })
   return (
-    <div className="container">
+    <div >
       <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
         <div className="container-fluid">
           <ul className="navbar-nav">
@@ -29,7 +29,7 @@ function App() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="logIn">
+              <Link className="nav-link active" to="logIn">
                 LogIn
               </Link>
             </li>

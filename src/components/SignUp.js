@@ -65,6 +65,7 @@ const SignUp = () => {
         .catch((error) => {
           setSubmitted(false);
           console.log("Error-", error);
+          alert("Error" + error.message);
         });
     }
   };
@@ -138,7 +139,7 @@ const SignUp = () => {
           type="button"
           onClick={handleSubmit}
           disabled={submitted}
-          className="btn btn-primary mb-3"
+          className="btn btn-outline-primary mb-3"
         >
           SignUp
         </button>
